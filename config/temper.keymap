@@ -103,6 +103,41 @@
             hold-trigger-key-positions = <10 12 20 21 16 17 19 6>;
             hold-trigger-on-release;
         };
+
+        hm_shift_r: hm_shift_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_SHIFT_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-on-release;
+            hold-while-undecided;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 20>;
+        };
+
+        hm_shift_l: hm_shift_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_SHIFT_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-on-release;
+            hold-while-undecided;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+        };
+
+        hm_2: hm_2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_2";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-on-release;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -150,6 +185,12 @@
             key-positions = <20 23>;
             timeout-ms = <200>;
         };
+
+        boot_r {
+            bindings = <&bootloader>;
+            key-positions = <33 5 9>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -158,10 +199,10 @@
         base {
             display-name = "Base";
             bindings = <
-  &kp Q              &kp W           &kp E               &kp R             &kp T                         &kp Y      &kp U             &kp I                &kp O           &kp P
-  &hml LEFT_SHIFT A  &hm LEFT_GUI S  &hm LEFT_CONTROL D  &hml RIGHT_ALT F  &kp G                         &kp H      &hmr RIGHT_ALT J  &hm RIGHT_CONTROL K  &hm LEFT_GUI L  &hmr RIGHT_SHIFT SEMICOLON
-  &kp Z              &kp X           &kp C               &kp V             &kp B                         &kp N      &kp M             &kp COMMA            &kp DOT         &mt BACKSLASH SLASH
-                                     &lt 5 BACKSPACE     &lt 2 TAB         &space_alt RIGHT_ALT SPACE    &kp ENTER  &lt 3 ENTER       &lt 4 DEL
+  &kp Q                     &kp W             &kp E                 &kp R              &kp T        &kp Y      &kp U              &kp I                  &kp O             &kp P
+  &hm_shift_l LEFT_SHIFT A  &hm_2 LEFT_GUI S  &hm_2 LEFT_CONTROL D  &hm_2 RIGHT_ALT F  &kp G        &kp H      &hm_2 RIGHT_ALT J  &hm_2 RIGHT_CONTROL K  &hm_2 LEFT_GUI L  &hm_shift_r RIGHT_SHIFT SEMICOLON
+  &kp Z                     &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
+                                              &lt 5 BACKSPACE       &lt 2 TAB          &kp SPACE    &kp ENTER  &lt 3 ENTER        &lt 4 DEL
             >;
         };
 
