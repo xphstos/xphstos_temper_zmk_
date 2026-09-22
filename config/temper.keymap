@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &mmv_input_listener {
     precisionnav {
@@ -115,43 +114,6 @@
             layers = <0>;
         };
 
-        Alt+tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <10 11 12>;
-            layers = <0>;
-            timeout-ms = <100>;
-        };
-
-        Tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <0 10>;
-            layers = <0>;
-        };
-
-        Cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <21 22>;
-            layers = <0>;
-        };
-
-        Copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <22 23>;
-            layers = <0>;
-        };
-
-        Paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <23 24>;
-            layers = <0>;
-        };
-
-        screenshot {
-            bindings = <&kp LG(LS(S))>;
-            key-positions = <9 8>;
-            layers = <0>;
-        };
-
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <27 28>;
@@ -171,12 +133,6 @@
             layers = <0>;
         };
 
-        alt_f4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <0 1 2>;
-            layers = <0>;
-        };
-
         esc_left {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
@@ -187,55 +143,6 @@
         bluetooth {
             bindings = <&mo 1>;
             key-positions = <32 33>;
-        };
-
-        win_nav_left {
-            bindings = <&kp LG(LEFT)>;
-            key-positions = <16 17>;
-        };
-
-        win_nav_right {
-            bindings = <&kp LG(RIGHT)>;
-            key-positions = <19 18>;
-        };
-
-        win_nav_up {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <7 8>;
-        };
-
-        win_nav_down {
-            bindings = <&kp LG(DOWN_ARROW)>;
-            key-positions = <17 18>;
-        };
-
-        win_nav_left_shift {
-            bindings = <&kp LG(LS(LEFT))>;
-            key-positions = <16 17 18>;
-        };
-
-        win_nav_right_shift {
-            bindings = <&kp LG(LS(RIGHT))>;
-            key-positions = <19 18 17>;
-        };
-
-        num_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <16 17 18>;
-            layers = <5>;
-            timeout-ms = <175>;
-        };
-
-        num_par_left {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
-            layers = <5>;
-        };
-
-        num_par_right {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <18 19>;
-            layers = <5>;
         };
 
         del_left {
@@ -270,19 +177,19 @@
 
         navi_right {
             bindings = <
-  &trans     &trans     &trans     &trans        &trans       &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-  &trans     &trans     &trans     &kp LEFT_ALT  &trans       &msc SCRL_UP    &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW        &kp RIGHT
-  &kp LC(Z)  &kp LC(Y)  &kp LC(X)  &kp LC(C)     &kp LC(V)    &msc SCRL_DOWN  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN         &kp END
-                        &trans     &trans        &trans       &kp UNDERSCORE  &trans         &trans
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0
+  &trans        &trans        &trans        &trans        &trans          &kp LEFT        &kp DOWN      &kp UP          &kp RIGHT        &kp BACKSLASH
+  &kp LC(Z)     &kp LC(Y)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+                              &trans        &trans        &trans          &kp UNDERSCORE  &trans        &trans
             >;
         };
 
         navi_left {
             bindings = <
-  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT    &trans  &trans      &trans            &trans      &kp C_VOLUME_UP
-  &trans           &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans         &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE
-  &trans           &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans         &trans  &trans      &trans            &trans      &kp C_VOL_DN
-                                    &trans             &kp PIPE               &trans         &trans  &trans      &trans
+  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+  &trans           &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans         &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp GRAVE
+  &trans           &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans         &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp TILDE
+                                    &trans             &kp PIPE               &trans         &trans          &trans         &trans
             >;
         };
 
