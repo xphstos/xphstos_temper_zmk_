@@ -3,38 +3,38 @@ layers:
   Base:
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ''''
+  - U
+  - I
+  - O
+  - P
   - {t: A, h: Shift}
-  - {t: R, h: Win}
-  - {t: S, h: LEFT CONTROL}
-  - {t: T, h: AltGr}
+  - {t: S, h: Win}
+  - {t: D, h: LEFT CONTROL}
+  - {t: F, h: AltGr}
   - G
-  - K
-  - {t: N, h: AltGr}
-  - {t: E, h: RIGHT CONTROL}
-  - {t: I, h: Win}
-  - {t: O, h: Shift}
+  - H
+  - {t: J, h: AltGr}
+  - {t: K, h: RIGHT CONTROL}
+  - {t: L, h: Win}
+  - {t: ;, h: Shift}
   - Z
   - X
   - C
-  - D
   - V
+  - B
+  - N
   - M
-  - H
   - ','
   - .
   - {t: /, h: \}
-  - {t: ⏎, h: NUMERICAL}
+  - {t: ⌫, h: NUMERICAL}
   - {t: ↹, h: navi_right}
-  - {t: ⌫, h: AltGr}
-  - ␣
+  - {t: ␣, h: AltGr}
+  - ⏎
   - {t: ⏎, h: navi_left}
   - {t: ⌦, h: F1_F12}
   BLT:
@@ -222,80 +222,6 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - '='
-  focus_switch:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+7
-  - Gui+8
-  - Gui+9
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+4
-  - Gui+5
-  - Gui+6
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+1
-  - Gui+2
-  - Gui+3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Scroll ↑
-  - Mouse ←
-  - Mouse ↑
-  - Mouse ↓
-  - Mouse →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Scroll ↓
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Left Click
-  - Middle Click
-  - Right Click
 combos:
 - p: [10, 19]
   k: CAPSLOCK
@@ -337,22 +263,16 @@ combos:
   k: BLT
 - p: [16, 17]
   k: Gui+←
-  l: [focus_switch]
 - p: [19, 18]
   k: Gui+→
-  l: [focus_switch]
 - p: [7, 8]
   k: Gui+UP ARROW
-  l: [focus_switch]
 - p: [17, 18]
   k: Gui+DOWN ARROW
-  l: [focus_switch]
 - p: [16, 17, 18]
   k: Gui+Sft+←
-  l: [focus_switch]
 - p: [19, 18, 17]
   k: Gui+Sft+→
-  l: [focus_switch]
 - p: [16, 17, 18]
   k: '='
   l: [NUMERICAL]
@@ -364,7 +284,3 @@ combos:
   l: [NUMERICAL]
 - p: [20, 23]
   k: ⌦
-- p: [14, 15]
-  k: {t: mouse, h: toggle}
-- p: [33, 34]
-  k: focus_switch
