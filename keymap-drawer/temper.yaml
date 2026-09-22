@@ -33,7 +33,7 @@ layers:
   - {t: /, h: \}
   - {t: ⌫, h: NUMERICAL}
   - {t: ↹, h: navi_right}
-  - {t: ␣, h: AltGr}
+  - ␣
   - ⏎
   - {t: ⏎, h: navi_left}
   - {t: ⌦, h: F1_F12}
@@ -242,3 +242,6 @@ combos:
   k: BLT
 - p: [20, 23]
   k: ⌦
+- p: [33, 5, 9]
+  k: Boot
+  l: [Base]
