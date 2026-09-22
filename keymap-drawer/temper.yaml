@@ -75,36 +75,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   navi_right:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt
-  - {t: ▽, type: trans}
-  - Scroll ↑
   - ←
-  - UP ARROW
-  - DOWN ARROW
+  - ↓
+  - ↑
   - →
+  - \
   - Undo
   - Redo
   - Cut
   - Copy
   - Paste
-  - Scroll ↓
-  - Home
-  - PAGE UP
-  - PAGE DOWN
-  - End
+  - _
+  - +
+  - '{'
+  - '}'
+  - \
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -117,31 +117,31 @@ layers:
   - '#'
   - $
   - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOLUME UP
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: ▽, type: trans}
   - '{'
   - '['
   - (
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ⏮
-  - ⏯
-  - ⏭
-  - MUTE
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - '`'
   - {t: ▽, type: trans}
   - '}'
   - ']'
   - )
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Vol Down
+  - _
+  - +
+  - '{'
+  - '}'
+  - '~'
   - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
@@ -226,24 +226,6 @@ combos:
 - p: [10, 19]
   k: CAPSLOCK
   l: [Base]
-- p: [10, 11, 12]
-  k: Alt+↹
-  l: [Base]
-- p: [0, 10]
-  k: '~'
-  l: [Base]
-- p: [21, 22]
-  k: Cut
-  l: [Base]
-- p: [22, 23]
-  k: Copy
-  l: [Base]
-- p: [23, 24]
-  k: Paste
-  l: [Base]
-- p: [9, 8]
-  k: Snip Img
-  l: [Base]
 - p: [27, 28]
   k: ;
   l: [Base]
@@ -253,34 +235,10 @@ combos:
 - p: [0, 4, 32]
   k: Boot
   l: [Base]
-- p: [0, 1, 2]
-  k: Win Close
-  l: [Base]
 - p: [0, 1]
   k: ESCAPE
   l: [Base]
 - p: [32, 33]
   k: BLT
-- p: [16, 17]
-  k: Gui+←
-- p: [19, 18]
-  k: Gui+→
-- p: [7, 8]
-  k: Gui+UP ARROW
-- p: [17, 18]
-  k: Gui+DOWN ARROW
-- p: [16, 17, 18]
-  k: Gui+Sft+←
-- p: [19, 18, 17]
-  k: Gui+Sft+→
-- p: [16, 17, 18]
-  k: '='
-  l: [NUMERICAL]
-- p: [16, 17]
-  k: (
-  l: [NUMERICAL]
-- p: [18, 19]
-  k: )
-  l: [NUMERICAL]
 - p: [20, 23]
   k: ⌦
